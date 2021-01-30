@@ -1,0 +1,95 @@
+ @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+  /*========== BASE ==========*/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*========== VARIABLES ==========*/
+//Primary colors
+$first-color:hsl(12, 88%, 59%);
+$second-color:hsl(228, 39%, 23%);
+
+//Neutral Colors
+
+$dark-grayish-blue: hsl(227, 12%, 61%);
+$very-dark-blue: hsl(233, 12%, 13%);
+$very-pale-red: hsl(13, 100%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+//Font
+$body-font:'Be Vietnam', sans-serif;
+$body-font-size:16px;
+$regular-font:400;
+$medium-font:500;
+$thick-font:700;
+$text-color:hsl(233, 12%, 13%);
+$max-width: 1170px;
+$fixed-width: 450px;
+/*========== GLOBAL ==========*/
+html{
+    scroll-behavior: smooth; 
+    font-size: $body-font-size; 
+}
+body{
+    font-family: $body-font;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ul {
+  list-style-type: none;
+ 
+}
+
+h1, h2, h3, h4 {
+//   letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: $dark-grayish-blue;
+  font-size: 1.2rem;
+  
+}
+
+
+
+/*========== RESPONSIVENESS ==========*/
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content; 
+    }
+}
+
+// @mixin laptop {
+//     @media screen and (min-width: 1200px) {
+//         @content; 
+//     }
+// }
