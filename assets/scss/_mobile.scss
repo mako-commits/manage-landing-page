@@ -5,13 +5,6 @@ margin: 0 auto;
 width: 90vw;
 }
 
-// main {
-//   min-height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 %button{
     display: inline-block;
     padding: .75rem 1.5rem;
@@ -30,7 +23,7 @@ header {
     width: 90vw;
     height: 64px;
       padding: 2.5rem 0.5rem;
-    // padding: 2.5rem;
+   
     background:transparent;
     
 
@@ -169,7 +162,7 @@ h4{
     height: 5rem;
     width: 5rem !important;
     top:-4rem;
-    left:12rem;   
+    left:10rem;   
 }
 
 .owl-dots{
@@ -211,8 +204,7 @@ button{
 
 .more{
     background: url(../images/bg-simplify-section-mobile.svg);
-        // background-position: top -100px right -175px, top 900px left -380px;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     margin-top: 10rem;
     background-color: $first-color;
     padding: 8rem 1rem;
