@@ -118,28 +118,26 @@
             width: 100vw;
             margin-right: 2rem;
         }
+
+
+
+.about__card-top{
+   
+        margin-bottom: 1rem;
+        background: none;
+        margin-left: 1rem;
+        border-top-left-radius: .75rem;
+        border-bottom-left-radius: .9rem;
+    }
     }
 
 
+.swiper-pagination{
+    display: none !important;
+}
 
 
-    .carousel{
-    max-width: 1700px;
-    margin: auto;
-    padding-top: 5rem;
 
-    }
-     .carousel .card{
-        width: 30rem;
-        margin: 20px 0;
-        padding: 3rem 0.5rem;
-        height: 20rem;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-        position: relative;
-    }
-    .owl-dot{
-        display:none;
-    }
 
     .more{
         background-image: url(../images/bg-simplify-section-desktop.svg);

@@ -1,3 +1,31 @@
+
+
+
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: true,
+    autoplayTimeout: 5000,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 0,
+        modifier: 0,
+        slideShadows: false,
+    },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + '</span>';
+        },
+    },
+});
+
 $(function () {
 
     $("body").on("click", "#hamburger", function () {
@@ -30,27 +58,7 @@ $(function () {
     });
 
 
-    $(".carousel").owlCarousel({
-        margin: 150,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
-    });
+
 
     // email verification
 
